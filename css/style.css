@@ -18,3 +18,10 @@ pre {
   border: 1px dashed #555;
   max-width: 300px;
 }
+
+.centerpiece {
+  text-align: center;
+  font-family: monospace;
+  color: white;
+  margin-top: 2rem;
+}
