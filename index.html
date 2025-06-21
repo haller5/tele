@@ -229,11 +229,29 @@ Status: semi-stable
     };
 
     function loadFile(file) {
+      // Highlight active file in sidebar
       document.querySelectorAll('.file-link').forEach(link => link.classList.remove('active'));
-      const active = Array.from(document.querySelectorAll('.file-link')).find(el => el.textContent.toLowerCase().includes(file));
+      const active = Array.from(document.querySelectorAll('.file-link'))
+        .find(el => el.textContent.toLowerCase().includes(file));
       if (active) active.classList.add('active');
-      document.getElementById('main').innerHTML = fileContent[file];
+
+      // Fetch HTML content from /subpages/{file}.html
+      fetch(`subpages/${file}.html`)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`File not found: ${file}.html`);
+          }
+          return response.text();
+        })
+        .then(data => {
+          document.getElementById('main').innerHTML = data;
+        })
+        .catch(error => {
+          document.getElementById('main').innerHTML = `<pre>⚠️ Error loading file: ${file}.html</pre>`;
+          console.error(error);
+        });
     }
+
   </script>
 </body>
 </html>
