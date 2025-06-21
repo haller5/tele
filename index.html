@@ -247,7 +247,7 @@ Status: semi-stable
           document.getElementById('main').innerHTML = data;
         })
         .catch(error => {
-          document.getElementById('main').innerHTML = `<pre>⚠️ Error loading file: ${file}.html</pre>`;
+          document.getElementById('main').innerHTML = `<pre>Error loading file: ${file}.html</pre>`;
           console.error(error);
         });
     }
