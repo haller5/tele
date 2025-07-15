@@ -62,7 +62,12 @@ body {
 }
 
 @media (max-width: 968px) {
+  .terminal {
+    flex-direction: column;
+  }
   .sidebar {
-    width: 180px; /* or something reasonable, not % */
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #444;
   }
 }
