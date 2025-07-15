@@ -55,14 +55,9 @@ body {
 /* Content: max line length on large screens */
 @media (min-width: 769px) {
   #main {
-    max-width: 140ch;  /* About half what you have now */
+    max-width: 110ch;  /* About half what you have now */
     margin: 0 auto;   /* Center on screen */
   }
 }
 
-/* Mobile: slightly increase font size */
-@media (max-width: 768px) {
-  body {
-    font-size: 1.5em; /* Just a slight bump */
-  }
 }
