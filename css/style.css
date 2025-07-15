@@ -60,19 +60,3 @@ body {
     font-size: 16px;
   }
 }
-
-@media (max-width: 968px) {
-  .terminal {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
-    border-right: none;
-    border-bottom: 1px solid #444;
-  }
-
-  .main {
-    flex-grow: 1;
-  }
-}
