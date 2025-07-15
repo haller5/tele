@@ -53,7 +53,7 @@ body {
 
 /* Content: max line length on large screens */
 @media (min-width: 769px) {
-  .content {
+  #main {
     max-width: 50ch;  /* About half what you have now */
     margin: 0 auto;   /* Center on screen */
   }
@@ -62,6 +62,6 @@ body {
 /* Mobile: slightly increase font size */
 @media (max-width: 768px) {
   body {
-    font-size: 1.1em; /* Just a slight bump */
+    font-size: 1.5em; /* Just a slight bump */
   }
 }
