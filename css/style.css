@@ -57,6 +57,7 @@ body {
   #main {
     max-width: 110ch;  /* About half what you have now */
     margin: 0 auto;   /* Center on screen */
+    font-size: 16px;
   }
 }
 
