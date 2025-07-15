@@ -54,7 +54,7 @@ body {
 /* Content: max line length on large screens */
 @media (min-width: 769px) {
   #main {
-    max-width: 50ch;  /* About half what you have now */
+    max-width: 140ch;  /* About half what you have now */
     margin: 0 auto;   /* Center on screen */
   }
 }
