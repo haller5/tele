@@ -61,4 +61,11 @@ body {
   }
 }
 
+@media (max-width: 968px) {
+  .sidebar {
+    width: 180px; /* or something reasonable, not % */
+  }
+}
+
+
 }
