@@ -57,7 +57,6 @@ body {
   #main {
     max-width: 110ch;  /* About half what you have now */
     font-size: 16px;
-    align-self: flex-start;
   }
 }
 
